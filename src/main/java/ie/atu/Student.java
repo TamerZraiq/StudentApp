@@ -5,6 +5,9 @@ public class Student {
     private String email;
     private String course;
 
+    public Student(String name) {
+        this.name = name;
+    }
     public Student(String name, String email, String course) {
         this.name = name;
         this.email = email;
@@ -33,5 +36,10 @@ public class Student {
     public void setCourse(String course) {
         this.course = course;
     }
-
+    public void displayDetails() {
+        System.out.println("Name: " + getName());
+        System.out.println("Email: " + getEmail());
+        System.out.println("Course: " + getCourse());
+        System.out.println();
+    }
 }
